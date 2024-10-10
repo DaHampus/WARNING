@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hampus's Handbook</title>
+    <title>Engineer Handbook</title>
     <style>
         * {
             margin: 0;
@@ -13,7 +13,7 @@
 
         body {
             background-color: #000;
-            font-family: 'Arial',
+            font-family: 'Arial', sans-serif;
             color: #E2E2E2;
             height: 100vh;
             display: flex;
@@ -21,23 +21,26 @@
             align-items: center;
             padding: 20px;
             text-align: center;
+            overflow: hidden; /* Prevent scrolling */
         }
 
         .container {
             padding: 20px;
-            max-width: 600px;
+            max-width: 100%;
+            max-height: 100%;
             box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+            overflow: hidden; /* Ensure content stays within the screen */
         }
 
         h1 {
-            font-size: 72px;
+            font-size: 5vw; /* Responsive font size based on viewport width */
             color: red;
             margin-bottom: 20px;
         }
 
         p {
-            font-size: 18px;
-            line-height: 1.6;
+            font-size: 2.5vw; /* Responsive font size based on viewport width */
+            line-height: 1.4;
             color: yellow;
             margin-bottom: 20px;
         }
@@ -46,11 +49,13 @@
             background-color: red;
             color: yellow;
             padding: 5px;
+            font-size: 2.5vw; /* Same size as the other text */
         }
 
         .warning-text {
             color: #808080;
             margin-top: 20px;
+            font-size: 2.2vw; /* Slightly smaller for the warning text */
         }
 
         .leave-link, .enter-link {
@@ -72,17 +77,15 @@
             I do not want to experience this content and so I want to 
             <a href="https://x.com/BestHampus?t=4pndoCKGOhlav-5TAEkqaA&s=09" class="leave-link">LEAVE</a> this website.<br>
             I have fully understood the warning, and I agree to 
-            <a href="https://dahampus.github.io/Handbook/" class="enter-link">ENTER</a>!
+            <a href="enter.html" class="enter-link">ENTER</a>!
         </p>
     </div>
 
     <script>
-    
         const text = `
             This website holds the handbook for Hampus that contains information and advice related to how to adore him, and the practice of such.
             
             The information and advices written in this handbook are highly detailed and glorified and might highly offend and disturb any of you or who's against adoring Hampus, and the practice of such.
-            
             
             You might even risk becoming a Hampus stalker, when reading this book.
             
