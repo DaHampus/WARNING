@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Under Construction</title>
+    <title>Engineer Handbook</title>
     <style>
         * {
             margin: 0;
@@ -12,23 +12,89 @@
         }
 
         body {
+            background-color: #000;
+            font-family: 'Arial',
+            color: #E2E2E2;
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            background-color: #000;
-            color: red;
-            font-family: 'Arial', sans-serif;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 600px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
         }
 
         h1 {
             font-size: 72px;
-            text-align: center;
-            width: 100%;
+            color: red;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: yellow;
+            margin-bottom: 20px;
+        }
+
+        .highlight {
+            background-color: red;
+            color: yellow;
+            padding: 5px;
+        }
+
+        .warning-text {
+            color: #808080;
+            margin-top: 20px;
+        }
+
+        .leave-link, .enter-link {
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <h1>UNDER CONSTRUCTION!</h1>
+    <div class="container">
+        <h1>WARNING!</h1>
+        <p id="main-text"></p>
+        <p class="warning-text">
+            I do not want to experience this content and so I want to 
+            <a href="https://x.com/BestHampus?t=4pndoCKGOhlav-5TAEkqaA&s=09" class="leave-link">LEAVE</a> this website.<br>
+            I have fully understood the warning, and I agree to 
+            <a href="enter.html" class="enter-link">ENTER</a>!
+        </p>
+    </div>
+
+    <script>
+    
+        const text = `
+            This website holds the handbook for Hampus that contains information and advice related to how to adore him, and the practice of such.
+            
+            The information and advices written in this handbook are highly detailed and glorified and might highly offend and disturb any of you or who's against adoring Hampus, and the practice of such.
+            
+            
+            You might even risk becoming a Hampus stalker, when reading this book.
+            
+            Do not enter this website if you get easily offended or disturbed by adoring Hampus, and the practice of such.
+          ‎   
+        `;
+
+        const lines = text.trim().split('\n');
+
+        const mainTextElement = document.getElementById('main-text');
+        mainTextElement.innerHTML = lines.map(line => line.trim()).join('<br>');
+        mainTextElement.innerHTML += '<br><span class="highlight">Do not enter this website if you get easily offended or disturbed by adoring Hampus, and the practice of such.</span>';
+    </script>
 </body>
 </html>
